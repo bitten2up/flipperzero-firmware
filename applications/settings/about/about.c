@@ -91,7 +91,7 @@ static DialogMessageButton hw_version_screen(DialogsApp* dialogs, DialogMessage*
         furi_hal_version_get_hw_connect(),
         furi_hal_version_get_hw_region_name(),
         furi_hal_region_get_name(),
-        my_name ? my_name : "Unknown");
+        my_name ? my_name : "Bitten CFW");
 
     furi_string_cat_printf(buffer, "Serial Number:\n");
     const uint8_t* uid = furi_hal_version_uid();
